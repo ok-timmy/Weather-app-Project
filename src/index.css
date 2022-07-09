@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('images/weather-app-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.app {
+  margin-left: auto ;
+  margin-right: auto;
+  display: block;
+}
+
+.form {
+  display: block;
+  text-align: center;
+}
+
+.form form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  padding:10px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(36, 36, 231);
+  border-radius: 25px;
+  padding: 10px;
+  /* margin-left: 0.5rem; */
+  color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+.main {
+  display: flex;
+  max-width: 40%;
+  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: honeydew 2px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  color: whitesmoke;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.main img {
+  width: auto;
+  height: auto;
+}
+
+.others {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.others div {
+  margin: 0.5rem 1rem;
+  width: 12rem;
+  background-color: rgba(250, 246, 246, 0.5);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  justify-items: space-between;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+footer {
+  bottom: 0;
+  float: right;
+  color: white;
+}
+
+/* .diverror div {
+  margin-left: auto;
+  margin-right: auto;
+  /* justify-content: center; 
+} */
+
+
+@media (max-width: 560px) {
+  .app {
+    display: block;
+  }
+  .main {
+    display: block;
+    height: auto;
+    justify-content: center;
+  }
+
+  .others {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5rem 1rem;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .others div {
+    width: 15rem;
+  }
+}
